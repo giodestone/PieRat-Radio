@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1042036642520648}
+  m_IsPrefabParent: 1
+--- !u!1 &1042036642520648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4261449754617730}
+  - component: {fileID: 114442519925667360}
+  - component: {fileID: 114626805206461098}
+  - component: {fileID: 114878483721302112}
+  - component: {fileID: 114718658035017090}
+  - component: {fileID: 114159305335504958}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 10912, guid: 0000000000000000f000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4261449754617730
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114159305335504958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad817ddaa005e548abb68bc55239f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemySpawner: {fileID: 114626805206461098}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
+  star4: {fileID: 0}
+  star5: {fileID: 0}
+--- !u!114 &114442519925667360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9791d89c7bf76c4f860572135b9525e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyDeduct: 20
+  deductDelay: 10
+  moneyText: {fileID: 0}
+  moneyInfo: {fileID: 0}
+  setinfoDelay: 1
+  DeductTexts:
+  - "fags -\xA320"
+  - "girls -\xA320"
+  - "platfrom shoes -\xA320"
+  - "flares -\xA320"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  fuleText: {fileID: 0}
+--- !u!114 &114626805206461098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e5614ebc97cb94e9060f1700420fa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WantedLevels:
+  - RangeLow: 0
+    RangeHigh: 100
+    MaxActiveShips: 6
+    Stars: 0
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 6
+  - RangeLow: 100
+    RangeHigh: 200
+    MaxActiveShips: 6
+    Stars: 1
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 7
+  - RangeLow: 200
+    RangeHigh: 300
+    MaxActiveShips: 10
+    Stars: 2
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 7
+  - RangeLow: 300
+    RangeHigh: 400
+    MaxActiveShips: 15
+    Stars: 3
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 7
+  - RangeLow: 400
+    RangeHigh: 500
+    MaxActiveShips: 20
+    Stars: 4
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 7
+  - RangeLow: 500
+    RangeHigh: Infinity
+    MaxActiveShips: 30
+    Stars: 5
+    MinSpawnTimeSeconds: 5
+    MaxSpawnTimeSeconds: 7
+  SpawnPoints:
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  - SpawnLocation: {fileID: 0}
+    ShouldSpawn: 1
+  Enemies:
+  - {fileID: 1936840950825748, guid: 57541391d17258348b4bc1c15c97ae8c, type: 2}
+--- !u!114 &114718658035017090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf3fd7a78e549449a0fb99e9004defc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyDesplay: {fileID: 0}
+  fanDesplay: {fileID: 0}
+--- !u!114 &114878483721302112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042036642520648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad2ef82efe10a4409a41056e4c1b26f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
