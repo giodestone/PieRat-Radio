@@ -7,6 +7,7 @@ Made for the Global Game Jam 2018 where the theme was 'Transmission'. [Global Ga
 ![GIF of Gameplay](https://github.com/giodestone/PieRat-Radio/blob/master/Images/GIF.gif)
 
 # Playing
+[Play Here!](https://giodestone.itch.io/pierat-radio)
 [Download Here!](https://github.com/giodestone/PieRat-Radio/releases)
 
 Or alternatively clone the repo and run the files from inside of the 'Executable'.
